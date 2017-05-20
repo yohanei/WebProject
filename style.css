@@ -1,0 +1,35 @@
+#slider_scroll{
+	top: 0;
+    left: -180px;
+    width: 180px;
+    position: fixed;
+    z-index: 9999;
+
+}
+#tab{
+	position: absolute;
+    top: 20px;
+    right: -24px;
+    width: 24px;
+    background: mediumpurple;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 9px 0;
+}
+#slider_content {
+    background: mediumpurple;
+    text-align: center;
+    padding-top: 20px;
+}
+#tab span {
+    display: block;
+    height: 20px;
+    padding: 1px 0;
+    line-height: 12px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+a{
+     font-size: 30px;
+}
