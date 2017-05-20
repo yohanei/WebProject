@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>醫資學程教學網</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type='text/javascript' src='https://code.jquery.com/jquery-1.9.1.min.js'></script>
+	<script type='text/javascript'>
+	$(function(){
+		var w = $("#slider_content").width();
+		$('#slider_content').css('height', ($(window).height() - 20) + 'px' ); 
+		$("#tab").mouseover(function(){
+			if ($("#slider_scroll").css('left') == '-'+w+'px')
+			{
+				$("#slider_scroll").animate({ left:'0px' }, 600 ,'swing');
+			}
+		});
+		$("#slider_content").mouseleave(function(){
+			$("#slider_scroll").animate( { left:'-'+w+'px' }, 600 ,'swing');	
+		});	
+	});
+
+	</script>
+</head>
+
+<body style="background-color: skyblue;">
+<div>
+	<div id="slider_scroll">
+		<div id="tab">
+			<span>點</span>
+			<span>我</span>
+			<span> </span>
+			<span>知</span>
+			<span>到</span>
+			<span>更</span>
+			<span>多</span>
+			<span>知</span>
+			<span>識</span>
+		</div>
+		<div id="slider_content">
+			<div style="margin: 30px 0px 20px 0px;">
+				<a href="Home01.html" >首頁</a>
+			</div>
+			<div style="margin: 30px 0px 20px 0px;">
+				<a href="https://www.smart2help.com/e-books/tij-3rd-edition/" >Java</a>
+			</div>
+			<div style="margin: 30px 0px 20px 0px;">
+				<a href="https://sls.weco.net/s17-webfund">Web</a>
+			</div>
+			<div style="margin: 30px 0px 20px 0px;">
+				<a href="https://www.codecademy.com/">Codecademy</a>
+			</div>
+			<div style="margin: 30px 0px 20px 0px;">
+				<a href="https://www.freecodecamp.com/">Freecodecamp</a>
+			</div>
+			<div style="margin: 250px 0px 0px 0px;">
+				<a href="#" >留言板</a>
+			</div>
+		</div>
+	</div>
+	<div>
+
+		<div>
+		<center>
+			<header>
+				<h1>醫資學程教學網</h1>
+			</header>
+			
+		</div>
+		</center>
+		
+		</div>
+	</div>
+</body>
+</html>
