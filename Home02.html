@@ -21,7 +21,6 @@
 			$("#slider_scroll").animate( { left:'-'+w+'px' }, 600 ,'swing');	
 		});	
 	});
-
 	</script>
 </head>
 
@@ -29,17 +28,25 @@
 <script>
 $(document).ready(function(){
 	$("iframe").hide();
+	$(".java").hide();
+	$(".web").hide();
     $("#java").click(function(){
+    	$(".java").show();
+    	$(".web").hide();
     	$("iframe").show();
     	$("#content").hide();
      	$("iframe").attr("src","https://www.smart2help.com/e-books/tij-3rd-edition/");  
     });
       $("#web").click(function(){
+		$(".java").hide();
+      	$(".web").show();
       	$("iframe").show();
     	$("#content").hide();
         $("iframe").attr("src","https://sls.weco.net/s17-webfund");  
     });
       $("#home").click(function(){
+      	$(".java").hide();
+      	$(".web").hide();
         $("iframe").hide();
     	$("#content").show(); 
     });
@@ -70,16 +77,8 @@ $(document).ready(function(){
 			<div style="margin: 30px 0px 20px 0px;">
 				<a href="#" id="web">Web</a>
 			</div>
-			<div style="margin: 30px 0px 20px 0px;">
-				<a href="https://www.codecademy.com/" id="codecademy">Codecademy</a>
-			</div>
-			<div style="margin: 30px 0px 20px 0px;">
-				<a href="https://www.freecodecamp.com/" id="freecodecamp">Freecodecamp</a>
-			</div>
-			<div style="margin: 30px 0px 20px 0px;">
-				<a href="https://www.w3schools.com/" id="w3schools">W3schools</a>
-			</div>
-			<div style="margin: 150px 0px 0px 0px;">
+			
+			<div style="margin: 250px 0px 0px 0px;">
 				<a href="#" >留言板</a>
 			</div>
 		</div>
@@ -94,6 +93,26 @@ $(document).ready(function(){
 		<marquee style="height:25px;color:blue;font-size:25px" scrollamount="20" behavior="alternate">
 		W&nbsp;&nbsp;E&nbsp;&nbsp;L&nbsp;&nbsp;C&nbsp;&nbsp;O&nbsp;&nbsp;M&nbsp;&nbsp;E&nbsp;&nbsp;!&nbsp;&nbsp;&nbsp;M&nbsp;&nbsp;I&nbsp;&nbsp;I&nbsp;&nbsp;A&nbsp;&nbsp;~</marquee>
 		</div>
+		<div>
+		<ul class="java">
+			<li><a href="https://github.com/Andy0517">林正杰</a></li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			<li><a href="https://github.com/HuInworld">胡瀚文</a></li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			<li><a href="https://github.com/tigerjenny">鄭家欣</a></li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			<li><a href="https://github.com/psli0101">李品萱</a></li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+		</ul>
+		<ul class="web">
+			<li ><a href="https://www.codecademy.com/" id="codecademy">Codecademy</a></li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			<li><a href="https://www.freecodecamp.com/" id="freecodecamp">Freecodecamp</a></li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			<li><a href="https://www.w3schools.com/" id="w3schools">W3schools</a></li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+		</ul>
+		</div>
 		<iframe src=" " width="1000" height="1000" frameborder="0" scrolling="auto"></iframe>
 		<div>
 		<table border="0"  width="1000" height="1000"  id="content">
@@ -104,7 +123,7 @@ $(document).ready(function(){
 			 <hr />
             <p align="center">醫資學程教學網</p>
 		</div>
-	</center>		
+	</center>
 </div>
 </body>
 </html>
