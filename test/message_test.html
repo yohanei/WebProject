@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html>
-	<?php
-		include("connectdb.php");
-	?>
 <head>
 	<!--此為留言板功能測試使用頁面，請勿隨意更動，謝謝-->
 	<meta charset="UTF-8">
@@ -12,24 +9,16 @@
 <body>
 	<div>
 		<h2>留言板</h2>
-		<form>
-			<table>
-				<tr>
-					<td><b>君の名は：</b></td>
-					<td><input type="text" name="name"></td>
-				</tr>
-				<tr>
-					<td><b>我想說：</b></td>
-					<td><textarea ></textarea></td>
-				</tr>
-				<tr><td><input type="submit" value="送出"></td></tr>
-			</table>
-		</form>
-	</div>
-	<div>
-		<form>
+		<form action="gbadd.htm">
 			
 		</form>
+	</div>
+	<br>
+	<br>
+	<div>
+		<?php
+			include("gb.php");
+		?>
 	</div>
 </body>
 </html>

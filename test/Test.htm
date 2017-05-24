@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="./notitle.css">
+	<title>TestPage</title>
+</head>
+<body>
+	<h1>你想幹嘛？</h1>
+	<table>
+		<tr>
+			<td><a href=Test.php?Act=101>留言啊廢話！</a></td>
+		</tr>
+		<tr>
+			<td>
+				<?php
+					if($Act==101){
+						include("gb.php");
+					}
+				?>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

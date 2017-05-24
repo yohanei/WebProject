@@ -1,4 +1,4 @@
 <?php
- mysql_connect("localhost", "student", "Asia2013");
- mysql_select_db("student");
+ mysql_connect("localhost", "user", "mysqlserver");
+ mysql_select_db("guestbook");
 ?>
