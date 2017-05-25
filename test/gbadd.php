@@ -1,10 +1,14 @@
+<!--gbadd.php-->
 <?php
  	include("connectdb.php");
 
+ 	$name=$_POST['name'];
+ 	$message=$_POST['message'];
  	$dt=date("Y-m-d h:i:s");
 
- 	$sql="insert into 資料表 values ('', '{$dt}', '{$name}', '{$message}')";
+ 	$sql="INSERT INTO `gb`(`Name`, `Message`, `Date`) VALUES ('$name', '$message', '$dt')";
+
  	mysql_query($sql);
 
- 	header("location:index.php?Act=100");
+ 	header("location:Test.htm");
 ?>

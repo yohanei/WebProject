@@ -9,17 +9,23 @@
 	<h1>你想幹嘛？</h1>
 	<table>
 		<tr>
-			<td><a href=Test.php?Act=101>留言啊廢話！</a></td>
-		</tr>
-		<tr>
-			<td>
-				<?php
-					if($Act==101){
-						include("gb.php");
-					}
-				?>
-			</td>
+			<td><a href="gb.php">顯示啊廢物！</a></td>
 		</tr>
 	</table>
+
+	<h1>GuestBook</h1>
+	<form action="gbadd.php" method="post">
+	<table>
+		<tr>
+			<td><b>君の名は：</b></td>
+			<td><input type="text" name="name"></td>
+		</tr>
+		<tr>
+			<td><b>我想說：</b></td>
+			<td><textarea name="message"></textarea></td>
+		</tr>
+		<tr><td><input type="submit" value="送出" name="push"></td></tr>
+	</table>
+</form>
 </body>
 </html>
