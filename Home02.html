@@ -4,7 +4,6 @@
 <head>
 	<meta charset="utf-8">
 	<title>醫資學程教學網</title>
-	 <iframe width="1" height="1" src="https://www.youtube.com/embed/f-Ced0T9g5g?autoplay=1&loop=1&playlist=f-Ced0T9g5g" frameborder="0" allowfullscreen></iframe>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type='text/javascript' src='https://code.jquery.com/jquery-1.9.1.min.js'></script>
 	<script type='text/javascript'>
@@ -21,16 +20,15 @@
 			$("#slider_scroll").animate( { left:'-'+w+'px' }, 600 ,'swing');	
 		});	
 	});
+
 	</script>
 </head>
 
 
 <script>
 $(document).ready(function(){
-	$("iframe").hide();
 	$(".java").hide();
 	$(".web").hide();
-	$(".home").hide();
     $("#java").click(function(){
     	$(".java").show();
     	$(".web").hide();
@@ -42,21 +40,16 @@ $(document).ready(function(){
       $("#web").click(function(){
 		$(".java").hide();
       	$(".web").show();
-      	$(".home").hide();
-      	$("iframe").show();
     	$("#content").hide();
         $("iframe").attr("src","https://sls.weco.net/s17-webfund");  
     });
       $("#home").click(function(){
       	$(".java").hide();
       	$(".web").hide();
-      	$(".home").show();
-        $("iframe").show();
     	$("#content").hide();
     	$("iframe").attr("src","http://www.miia.fju.edu.tw/layout/oneorange/vvindex.jsp?version=CH");  
     });
 });
-
 </script>
 
 <body background="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/18485791_1365117116937033_1230943798877047537_n.jpg?oh=d6d0021b2366d03022b78bf5cf8f8bce&oe=59A99807" ">
@@ -124,7 +117,7 @@ $(document).ready(function(){
 			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 		</ul>
 		</div>
-		<iframe src=" " width="1000" height="1000" frameborder="0" scrolling="auto"></iframe>
+		<iframe src="http://www.miia.fju.edu.tw/layout/oneorange/vvindex.jsp" width="1000" height="1000" frameborder="0" scrolling="auto"></iframe>
 		<div>
 		<table border="0"  width="1000" height="1000"  id="content" >
 		
@@ -135,7 +128,6 @@ $(document).ready(function(){
             <p align="center">醫資學程教學網</p>
 		</div>
 	</center>
-
 </div>
 </body>
 </html>
