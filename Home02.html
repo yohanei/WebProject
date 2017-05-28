@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>醫資學程教學網</title>
-	 <iframe width="5" height="5" src="https://www.youtube.com/embed/f-Ced0T9g5g?autoplay=1&loop=1&playlist=f-Ced0T9g5g" frameborder="0" allowfullscreen></iframe>
+	 <iframe width="1" height="1" src="https://www.youtube.com/embed/f-Ced0T9g5g?autoplay=1&loop=1&playlist=f-Ced0T9g5g" frameborder="0" allowfullscreen></iframe>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type='text/javascript' src='https://code.jquery.com/jquery-1.9.1.min.js'></script>
 	<script type='text/javascript'>
@@ -30,9 +30,11 @@ $(document).ready(function(){
 	$("iframe").hide();
 	$(".java").hide();
 	$(".web").hide();
+	$(".home").hide();
     $("#java").click(function(){
     	$(".java").show();
     	$(".web").hide();
+    	$(".home").hide();
     	$("iframe").show();
     	$("#content").hide();
      	$("iframe").attr("src","https://www.smart2help.com/e-books/tij-3rd-edition/");  
@@ -40,6 +42,7 @@ $(document).ready(function(){
       $("#web").click(function(){
 		$(".java").hide();
       	$(".web").show();
+      	$(".home").hide();
       	$("iframe").show();
     	$("#content").hide();
         $("iframe").attr("src","https://sls.weco.net/s17-webfund");  
@@ -47,10 +50,13 @@ $(document).ready(function(){
       $("#home").click(function(){
       	$(".java").hide();
       	$(".web").hide();
-        $("iframe").hide();
-    	$("#content").show(); 
+      	$(".home").show();
+        $("iframe").show();
+    	$("#content").hide();
+    	$("iframe").attr("src","http://www.miia.fju.edu.tw/layout/oneorange/vvindex.jsp?version=CH");  
     });
 });
+
 </script>
 
 <body background="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/18485791_1365117116937033_1230943798877047537_n.jpg?oh=d6d0021b2366d03022b78bf5cf8f8bce&oe=59A99807" ">
@@ -83,6 +89,7 @@ $(document).ready(function(){
 			</div>
 		</div>
 	</div>
+    
     <center>
 		<div>
 			<header>
@@ -91,10 +98,13 @@ $(document).ready(function(){
 		</div>
 		<div>
 		<marquee style="height:25px;color:blue;font-size:25px" scrollamount="20" behavior="alternate">
-		W&nbsp;&nbsp;E&nbsp;&nbsp;L&nbsp;&nbsp;C&nbsp;&nbsp;O&nbsp;&nbsp;M&nbsp;&nbsp;E&nbsp;&nbsp;!&nbsp;&nbsp;&nbsp;M&nbsp;&nbsp;I&nbsp;&nbsp;I&nbsp;&nbsp;A&nbsp;&nbsp;~</marquee>
+		W&nbsp;&nbsp;E&nbsp;&nbsp;L&nbsp;&nbsp;L&nbsp;&nbsp;C&nbsp;&nbsp;O&nbsp;&nbsp;M&nbsp;&nbsp;E&nbsp;&nbsp;!&nbsp;&nbsp;&nbsp;M&nbsp;&nbsp;I&nbsp;&nbsp;I&nbsp;&nbsp;A&nbsp;&nbsp;~</marquee>
 		</div>
 		<div>
 		<ul class="java">
+			<li style="font-size:30px;">參考github：</li>
+			<li><a href="https://github.com/hanktom">湯秉翰老師</a></li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 			<li><a href="https://github.com/Andy0517">林正杰</a></li>
 			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 			<li><a href="https://github.com/HuInworld">胡瀚文</a></li>
@@ -105,6 +115,7 @@ $(document).ready(function(){
 			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 		</ul>
 		<ul class="web">
+			<li style="font-size:30px;">練習網站：</li>
 			<li ><a href="https://www.codecademy.com/" id="codecademy">Codecademy</a></li>
 			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 			<li><a href="https://www.freecodecamp.com/" id="freecodecamp">Freecodecamp</a></li>
@@ -115,7 +126,7 @@ $(document).ready(function(){
 		</div>
 		<iframe src=" " width="1000" height="1000" frameborder="0" scrolling="auto"></iframe>
 		<div>
-		<table border="0"  width="1000" height="1000"  id="content">
+		<table border="0"  width="1000" height="1000"  id="content" >
 		
 		</table>
 		</div>
@@ -124,6 +135,7 @@ $(document).ready(function(){
             <p align="center">醫資學程教學網</p>
 		</div>
 	</center>
+
 </div>
 </body>
 </html>
