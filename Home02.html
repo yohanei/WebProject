@@ -27,29 +27,125 @@
 
 <script>
 $(document).ready(function(){
+	$("iframe").hide();
 	$(".java").hide();
 	$(".web").hide();
+	$("#special-content").hide();
+	$("#ability-contert").hide();
+	$("#feature-content").hide();
+	$("#plan-content").hide();
+	$("#relation-content").hide();
     $("#java").click(function(){
     	$(".java").show();
     	$(".web").hide();
-    	$("#content").hide();
+    	$(".home").hide();
+    	$("iframe").show();
      	$("iframe").attr("src","https://www.smart2help.com/e-books/tij-3rd-edition/");  
     });
       $("#web").click(function(){
+      	$(".home").hide();
+    	$("iframe").show();
 		$(".java").hide();
       	$(".web").show();
-    	$("#content").hide();
+      	$("#practice-content").hide();
         $("iframe").attr("src","https://sls.weco.net/s17-webfund");  
     });
       $("#home").click(function(){
+      	$(".home").show();
+      	$("iframe").hide();
       	$(".java").hide();
       	$(".web").hide();
-    	$("#content").hide();
-    	$("iframe").attr("src","http://www.miia.fju.edu.tw/layout/oneorange/vvindex.jsp?version=CH");  
     });
+      $("#fju").click(function(){
+      	$(".home").hide();
+      	$("iframe").show();
+      	$(".java").hide();
+      	$(".web").hide();
+      	$("iframe").attr("src","http://www.fju.edu.tw/index.jsp#&panel1-1"); 
+    });
+       $("#fju-MIIA").click(function(){
+      	$(".home").hide();
+      	$("iframe").show();
+      	$(".java").hide();
+      	$(".web").hide();
+      	$("iframe").attr("src","http://www.miia.fju.edu.tw/layout/oneorange/vvindex.jsp"); 
+    });
+         $("#fju-hospital").click(function(){
+      	$(".home").hide();
+      	$("iframe").show();
+      	$(".java").hide();
+      	$(".web").hide();
+      	$("iframe").attr("src","http://www.hospital.fju.edu.tw/zh-hant"); 
+    });
+        $("#fju-clinic").click(function(){
+      	$(".home").hide();
+      	$("iframe").show();
+      	$(".java").hide();
+      	$(".web").hide();
+      	$("iframe").attr("src","http://clinic.mc.fju.edu.tw/"); 
+    });
+
+     $("#special").click(function(){
+     $("#special-content").slideToggle("slow");
+     });
+      $("#special").mouseenter(function(){
+        $("#special").css("color","red");
+    });
+   		$("#special").mouseleave(function(){
+       $("#special").css("color","black");
+     });
+
+	 $("#ability").click(function(){
+     $("#ability-contert").slideToggle("slow");
+	 });
+	  $("#ability").mouseenter(function(){
+        $("#ability").css("color","red");
+    });
+   		$("#ability").mouseleave(function(){
+       $("#ability").css("color","black");
+     });
+
+	  $("#relation").click(function(){
+     $("#relation-content").slideToggle("slow");
+	 });
+	    $("#relation").mouseenter(function(){
+        $("#relation").css("color","red");
+    });
+   		$("#relation").mouseleave(function(){
+       $("#relation").css("color","black");
+     });
+
+	 $("#feature").click(function(){
+     $("#feature-content").slideToggle("slow");
+	 });
+	  $("#feature").mouseenter(function(){
+        $("#feature").css("color","red");
+    });
+   		$("#feature").mouseleave(function(){
+       $("#feature").css("color","black");
+     });
+
+	 $("#plan").click(function(){
+     $("#plan-content").slideToggle("slow");
+	 });
+	  $("#plan").mouseenter(function(){
+        $("#plan").css("color","red");
+    });
+   		$("#plan").mouseleave(function(){
+       $("#plan").css("color","black");
+     });
+
+	 $("#practice").click(function(){
+     $("#practice-content").slideToggle("slow");
+	 });
+	  $("#practice").mouseenter(function(){
+        $("#practice").css("color","red");
+    });
+   		$("#practice").mouseleave(function(){
+       $("#practice").css("color","black");
+     });
 });
 </script>
-
 <body background="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/18485791_1365117116937033_1230943798877047537_n.jpg?oh=d6d0021b2366d03022b78bf5cf8f8bce&oe=59A99807" ">
 <div>
 	<div id="slider_scroll">
@@ -58,7 +154,7 @@ $(document).ready(function(){
 			<span>我</span>
 			<span> </span>
 			<span>知</span>
-			<span>到</span>
+			<span>道</span>
 			<span>更</span>
 			<span>多</span>
 			<span>知</span>
@@ -106,21 +202,161 @@ $(document).ready(function(){
 			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 		</ul>
 		<ul class="web">
-			<li style="font-size:30px;">練習網站：</li>
+			<li style="font-size:30px;" id="practice">想練習,自學請點我~ XD</li>
+			<div id="practice-content">
 			<li ><a href="https://www.codecademy.com/" id="codecademy">Codecademy</a></li>
 			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 			<li><a href="https://www.freecodecamp.com/" id="freecodecamp">Freecodecamp</a></li>
 			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 			<li><a href="https://www.w3schools.com/" id="w3schools">W3schools</a></li>
 			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			</div>
 		</ul>
 		</div>
-		<iframe src="http://www.miia.fju.edu.tw/layout/oneorange/vvindex.jsp" width="1000" height="1000" frameborder="0" scrolling="auto"></iframe>
+		<iframe src=" " width="1000" height="1000" frameborder="0" scrolling="auto"></iframe>
 		<div>
-		<table border="0"  width="1000" height="1000"  id="content" >
-		
-		</table>
+		<table border="0"  width="1000" height="1000"  class="home" >
+		<tr>
+			<td>
+				<h2 id="special">●學程宗旨與特色</h2>
+			<div id="special-content">
+			<p>
+				<span style="font-size: 16px;">隨著科技的進步，資訊設備已經普遍進入醫療的環境，產生了大量的醫學資料。現今社會對醫學資訊的需求更加的強烈。無論是對醫學資訊的管理，或是對醫學資訊的研究，皆是未來的重點。此外，網際網路的生活化，使得醫學資訊的發展能更貼近生活應用之中。因此，同時具有醫療背景與資訊工程技術的跨領域人才將是未來所必需的。利用不同領域之間的專業和資源，以多元的視角去分析問題、幫助社會產生更多創新的學術研究與應用知識。</span></p>
+			<p>&nbsp;</p>
+			<p>
+				<span style="font-size: 16px;">整合理工學院內電機系、資工系、數學系的資源與師資，也跨院連接醫學院的醫學系與公衛系及管理學院資管系的專業知識與資源。且本校預計於2017年將完成輔仁大學附設醫院，屆時可與本學程互補並使雙方互利。學生、學程和醫院(企業)結合，是未來市場趨勢。醫院本身即是一個企業，學生在醫院實習，也是產學合作中心。此學程之特色之一為大四時安排全學年的產業實習，並配合相關教學醫院及醫療資訊企業醫療資訊人才需求，提供優質人力。</span></p>
+			<p>&nbsp;</p>
+			<p>
+				<span style="font-size: 16px;">本學程的特色，包含</span><strong style="font-size: 16px;"><span style="color:#ff0000;">「醫院實務」、「資訊工程」、與「創新應用」</span></strong><span style="font-size: 16px;">等三項核心能力；規劃以下發展重點：「醫院資訊系統」、「健康照護系統」、「醫學資訊創新應用」。並且，以實務導向為主，結合輔仁大學附設醫院資源，發揮綜效，整合醫學與資訊之跨領域的創新應用，並著重「專題實作」與「產業實習」等實作能力，期許能快速銜接，進入職場。</span></p>
+			</div>
+			</td>
+			</tr>
+
+			<tr><td>
+			<h2>●教學目標</h2>
+			<h4 id="ability">*核心能力</h4>
+			<div id="ability-contert">
+			<div>
+				<span style="font-size:16px;">本學程的特色，包含「醫院實務」、「資訊工程」、與「創新應用」等三項核心能力。並著重「專題實作」與「產業實習」等實作能力，期許能快速銜接，進入職場。</span></div>
+			<div>&nbsp;</div>
+			<div>
+				<table align="center" border="1" cellpadding="0" cellspacing="0">
+					<thead>
+			<tr>
+				<th>
+					<p style="text-align: center;">
+						<span style="color:#0000ff;font-size:16px;">核心能力</span></p>
+				</th>
+				<th>
+					<p style="text-align: center;">
+						<span style="color:#0000ff;font-size:16px;">內涵說明</span></p>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td style="width:500px;">
+					<p style="text-align: center;">
+						<span style="font-size:16px;">醫院實務之基礎</span></p>
+				</td>
+				<td style="width:500px;">
+					<p>
+						<span style="font-size:16px;">關於醫療診斷的知識與醫院資訊系統之實務</span><span style="font-size: 16.3636360168457px;">。</span></p>
+				</td>
+			</tr>
+			<tr>
+				<td style="width:500px;">
+					<p style="text-align: center;">
+						<span style="font-size:16px;">資訊工程之基礎</span></p>
+				</td>
+				<td style="width:500px;">
+					<p>
+						<span style="font-size:16px;">規劃程式架構，做為實務系統開發之準備。</span></p>
+				</td>
+			</tr>
+			<tr>
+				<td style="width:500px;">
+					<p style="text-align: center;">
+						<span style="font-size:16px;">創新應用</span></p>
+				</td>
+				<td style="width:500px;">
+					<p>
+						<span style="font-size:16px;">運用醫療背景與資訊工程的技術，以實務為導向、完成跨領域的創新應用。</span></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div>&nbsp;</div>
+</div>
+</div>
+	<h4 id="plan">*課程規劃</h4>
+	<div id="plan-content">
+	<div>
+	<span style="font-size:16px;">詳細課程如下：</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="color: rgb(51, 51, 51); font-family: Verdana, Arial, 微軟正黑體, 新細明體, sans-serif; font-size: 16px;">Java程式設計、C#程式設計、微積分、機率與統計、離散數學或線性代數(二選一)、資料結構與演算法、電腦網路、資料庫實務、物件導向分析與設計、醫學資訊、醫療標準及術語、電子病歷、臨床資訊學、醫療資訊系統實務、醫療決策分析、醫學影像、醫療設備與介面、Web基本原理與技術、行動裝置程式設計、人機介面設計與使用者經驗、行動醫療與創新應用專題、智慧醫院與創新應用專題、雲端健康照護專題、產業實習。</span></div>
+	</div>
+		</td></tr>
+	<tr><td>
+	<h2 id="relation">●相關連結</h2>
+			<div id="relation-content">
+			<div style="margin: 30px 0px 20px 0px;">
+				<a href="#" id="fju"  style="color: black;">輔仁大學</a>
+			</div>
+			<div style="margin: 30px 0px 20px 0px;">
+				<a href="#" id="fju-MIIA"  style="color: black;">輔仁大學醫學資訊與創新應用學士學位學程</a>
+			</div>
+			<div style="margin: 30px 0px 20px 0px;">
+				<a href="#" id="fju-hospital"  style="color: black;">天主教輔仁大學附設醫院</a>
+			</div>
+			<div style="margin: 30px 0px 20px 0px;">
+				<a href="#"  id="fju-clinic"  style="color: black;">輔仁診所</a>
+			</div>
 		</div>
+	</div>
+	</td></tr>
+<tr><td>
+			<h2 id="feature">●未來出路</h2>
+			<div id="feature-content">
+			<div>
+	<span style="font-size:16px;">1.升學：國內外資訊或醫學資訊相關研究所。</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:16px;">2.就業：</span></div>
+<div>
+	<span style="font-size:16px;">&nbsp; &nbsp; ※一般公務員</span></div>
+<div>
+	<span style="font-size:16px;">&nbsp; &nbsp; ※資訊技師</span></div>
+<div>
+	<span style="font-size:16px;">&nbsp; &nbsp; ※基因分析師</span></div>
+<div>
+	<span style="font-size:16px;">&nbsp; &nbsp; ※藥物設計師</span></div>
+<div>
+	<span style="font-size:16px;">&nbsp; &nbsp; ※醫院資訊系統開發</span></div>
+<div>
+	<span style="font-size:16px;">&nbsp; &nbsp; ※醫療系統開發</span></div>
+<div>
+	<span style="font-size:16px;">&nbsp; &nbsp; ※醫療儀器及系統銷售</span></div>
+<div>
+	<span style="font-size:16px;">&nbsp; &nbsp; ※醫療雲端系統開發</span></div>
+<div>
+	<span style="font-size:16px;">&nbsp; &nbsp; ※醫療儀器開發</span></div>
+<div>
+	<span style="font-size:16px;">&nbsp; &nbsp; ※資訊系統開發</span></div>
+<div>
+	<span style="font-size:16px;">&nbsp; &nbsp; ※資訊系統軟硬體銷售</span></div>
+<div>
+	<span style="font-size:16px;">&nbsp; &nbsp; ※</span><span style="font-size: 16.3636360168457px;">專業研究人員</span><span style="font-size: 16px;">&nbsp; &nbsp; </span></div>
+<div>
+	<span style="font-size: 16px;">&nbsp; &nbsp; ※中或小學教師</span></div>
+<div>
+	<span style="font-size: 16px;">&nbsp; &nbsp; ※</span><span style="font-size: 16.3636360168457px;">自行創業</span></div>
+	</div>
+</td></tr>
+</table>
 		<div>
 			 <hr />
             <p align="center">醫資學程教學網</p>
