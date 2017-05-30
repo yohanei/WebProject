@@ -4,6 +4,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>醫資學程教學網</title>
+	<iframe width="5" height="5" src="https://www.youtube.com/embed/f-Ced0T9g5g?autoplay=1&loop=1&playlist=f-Ced0T9g5g" frameborder="0" allowfullscreen></iframe>
+	
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type='text/javascript' src='https://code.jquery.com/jquery-1.9.1.min.js'></script>
 	<script type='text/javascript'>
@@ -30,11 +32,14 @@ $(document).ready(function(){
 	$("iframe").hide();
 	$(".java").hide();
 	$(".web").hide();
+	
 	$("#special-content").hide();
-	$("#ability-contert").hide();
+	$("#object-content").hide();
+	$("#ability-content").hide();
 	$("#feature-content").hide();
 	$("#plan-content").hide();
 	$("#relation-content").hide();
+    
     $("#java").click(function(){
     	$(".java").show();
     	$(".web").hide();
@@ -95,8 +100,18 @@ $(document).ready(function(){
        $("#special").css("color","black");
      });
 
+   		$("#object").click(function(){
+     $("#object-content").slideToggle("slow");
+     });
+      $("#object").mouseenter(function(){
+        $("#object").css("color","red");
+    });
+   		$("#object").mouseleave(function(){
+       $("#object").css("color","black");
+     });
+
 	 $("#ability").click(function(){
-     $("#ability-contert").slideToggle("slow");
+     $("#ability-content").slideToggle("slow");
 	 });
 	  $("#ability").mouseenter(function(){
         $("#ability").css("color","red");
@@ -147,6 +162,7 @@ $(document).ready(function(){
 });
 </script>
 <body background="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/18485791_1365117116937033_1230943798877047537_n.jpg?oh=d6d0021b2366d03022b78bf5cf8f8bce&oe=59A99807" ">
+
 <div>
 	<div id="slider_scroll">
 		<div id="tab">
@@ -216,9 +232,10 @@ $(document).ready(function(){
 		<iframe src=" " width="1000" height="1000" frameborder="0" scrolling="auto"></iframe>
 		<div>
 		<table border="0"  width="1000" height="1000"  class="home" >
-		<tr>
-			<td>
-				<h2 id="special">●學程宗旨與特色</h2>
+		
+		<tr><td>
+			
+				<center><h2 id="special">●學程宗旨與特色</h2></center>
 			<div id="special-content">
 			<p>
 				<span style="font-size: 16px;">隨著科技的進步，資訊設備已經普遍進入醫療的環境，產生了大量的醫學資料。現今社會對醫學資訊的需求更加的強烈。無論是對醫學資訊的管理，或是對醫學資訊的研究，皆是未來的重點。此外，網際網路的生活化，使得醫學資訊的發展能更貼近生活應用之中。因此，同時具有醫療背景與資訊工程技術的跨領域人才將是未來所必需的。利用不同領域之間的專業和資源，以多元的視角去分析問題、幫助社會產生更多創新的學術研究與應用知識。</span></p>
@@ -229,51 +246,53 @@ $(document).ready(function(){
 			<p>
 				<span style="font-size: 16px;">本學程的特色，包含</span><strong style="font-size: 16px;"><span style="color:#ff0000;">「醫院實務」、「資訊工程」、與「創新應用」</span></strong><span style="font-size: 16px;">等三項核心能力；規劃以下發展重點：「醫院資訊系統」、「健康照護系統」、「醫學資訊創新應用」。並且，以實務導向為主，結合輔仁大學附設醫院資源，發揮綜效，整合醫學與資訊之跨領域的創新應用，並著重「專題實作」與「產業實習」等實作能力，期許能快速銜接，進入職場。</span></p>
 			</div>
-			</td>
-			</tr>
+			
+		</td></tr>
 
-			<tr><td>
-			<h2>●教學目標</h2>
-			<h4 id="ability">*核心能力</h4>
-			<div id="ability-contert">
-			<div>
-				<span style="font-size:16px;">本學程的特色，包含「醫院實務」、「資訊工程」、與「創新應用」等三項核心能力。並著重「專題實作」與「產業實習」等實作能力，期許能快速銜接，進入職場。</span></div>
-			<div>&nbsp;</div>
-			<div>
-				<table align="center" border="1" cellpadding="0" cellspacing="0">
-					<thead>
-			<tr>
-				<th>
-					<p style="text-align: center;">
-						<span style="color:#0000ff;font-size:16px;">核心能力</span></p>
-				</th>
-				<th>
-					<p style="text-align: center;">
-						<span style="color:#0000ff;font-size:16px;">內涵說明</span></p>
-				</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td style="width:500px;">
-					<p style="text-align: center;">
-						<span style="font-size:16px;">醫院實務之基礎</span></p>
-				</td>
-				<td style="width:500px;">
-					<p>
-						<span style="font-size:16px;">關於醫療診斷的知識與醫院資訊系統之實務</span><span style="font-size: 16.3636360168457px;">。</span></p>
-				</td>
-			</tr>
-			<tr>
-				<td style="width:500px;">
-					<p style="text-align: center;">
-						<span style="font-size:16px;">資訊工程之基礎</span></p>
-				</td>
-				<td style="width:500px;">
-					<p>
-						<span style="font-size:16px;">規劃程式架構，做為實務系統開發之準備。</span></p>
-				</td>
-			</tr>
+		<tr><td>
+			
+				<center><h2 id="object">●教學目標</h2></center>
+			<div id="object-content">
+				<center><h4 id="ability">*核心能力</h4></center>
+				<div id="ability-content">
+				<div>
+					<span style="font-size:16px;">本學程的特色，包含「醫院實務」、「資訊工程」、與「創新應用」等三項核心能力。並著重「專題實作」與「產業實習」等實作能力，期許能快速銜接，進入職場。</span></div>
+				<div>&nbsp;</div>
+				<div>
+					<table align="center" border="1" cellpadding="0" cellspacing="0">
+						<thead>
+				<tr>
+					<th>
+						<p style="text-align: center;">
+							<span style="color:#0000ff;font-size:16px;">核心能力</span></p>
+					</th>
+					<th>
+						<p style="text-align: center;">
+							<span style="color:#0000ff;font-size:16px;">內涵說明</span></p>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td style="width:500px;">
+						<p style="text-align: center;">
+							<span style="font-size:16px;">醫院實務之基礎</span></p>
+					</td>
+					<td style="width:500px;">
+						<p>
+							<span style="font-size:16px;">關於醫療診斷的知識與醫院資訊系統之實務</span><span style="font-size: 16.3636360168457px;">。</span></p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:500px;">
+						<p style="text-align: center;">
+							<span style="font-size:16px;">資訊工程之基礎</span></p>
+					</td>
+					<td style="width:500px;">
+						<p>
+							<span style="font-size:16px;">規劃程式架構，做為實務系統開發之準備。</span></p>
+					</td>
+				</tr>
 			<tr>
 				<td style="width:500px;">
 					<p style="text-align: center;">
@@ -289,7 +308,7 @@ $(document).ready(function(){
 	<div>&nbsp;</div>
 </div>
 </div>
-	<h4 id="plan">*課程規劃</h4>
+	<center><h4 id="plan">*課程規劃</h4></center>
 	<div id="plan-content">
 	<div>
 	<span style="font-size:16px;">詳細課程如下：</span></div>
@@ -298,9 +317,13 @@ $(document).ready(function(){
 <div>
 	<span style="color: rgb(51, 51, 51); font-family: Verdana, Arial, 微軟正黑體, 新細明體, sans-serif; font-size: 16px;">Java程式設計、C#程式設計、微積分、機率與統計、離散數學或線性代數(二選一)、資料結構與演算法、電腦網路、資料庫實務、物件導向分析與設計、醫學資訊、醫療標準及術語、電子病歷、臨床資訊學、醫療資訊系統實務、醫療決策分析、醫學影像、醫療設備與介面、Web基本原理與技術、行動裝置程式設計、人機介面設計與使用者經驗、行動醫療與創新應用專題、智慧醫院與創新應用專題、雲端健康照護專題、產業實習。</span></div>
 	</div>
+	</div>
 		</td></tr>
+	
+
+
 	<tr><td>
-	<h2 id="relation">●相關連結</h2>
+	<center><h2 id="relation">●相關連結</h2></center>
 			<div id="relation-content">
 			<div style="margin: 30px 0px 20px 0px;">
 				<a href="#" id="fju"  style="color: black;">輔仁大學</a>
@@ -317,8 +340,10 @@ $(document).ready(function(){
 		</div>
 	</div>
 	</td></tr>
+
+
 <tr><td>
-			<h2 id="feature">●未來出路</h2>
+			<center><h2 id="feature">●未來出路</h2></center>
 			<div id="feature-content">
 			<div>
 	<span style="font-size:16px;">1.升學：國內外資訊或醫學資訊相關研究所。</span></div>
