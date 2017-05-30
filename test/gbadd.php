@@ -10,5 +10,5 @@
 
  	mysql_query($sql);
 
- 	header("location:Test.htm");
+ 	header("location:/test/");
 ?>
