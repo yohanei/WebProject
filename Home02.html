@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type='text/javascript' src='https://code.jquery.com/jquery-1.9.1.min.js'></script>
 	<script type='text/javascript'>
+    
 	$(function(){
 		var w = $("#slider_content").width();
 		$('#slider_content').css('height', ($(window).height() - 20) + 'px' ); 
@@ -23,6 +24,32 @@
 		});	
 	});
 	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="icon" type="image/png" href="http://example.com/myicon.png">
+    <style>
+    .hover {
+      position:relative;
+      height: 350px;
+    }
+
+    .hover img {
+          position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 200px;
+    background-color: white;
+      -webkit-transition: opacity 1s ease-in-out;
+      -moz-transition: opacity 1s ease-in-out;
+      -o-transition: opacity 1s ease-in-out;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .hover img:nth-of-type(2):hover{
+      opacity:0;
+    }
+    
+    </style>
 </head>
 
 
@@ -152,6 +179,7 @@ $(document).ready(function(){
        $("#practice").css("color","black");
      });
 });
+
 </script>
 <body background="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/18485791_1365117116937033_1230943798877047537_n.jpg?oh=d6d0021b2366d03022b78bf5cf8f8bce&oe=59A99807" ">
 <div>
@@ -178,9 +206,6 @@ $(document).ready(function(){
 				<a href="#" id="web">Web</a>
 			</div>
 			
-			<div style="margin: 250px 0px 0px 0px;">
-				<a href="./test" >留言板</a>
-			</div>
 		</div>
 	</div>
     <center>
@@ -330,6 +355,7 @@ $(document).ready(function(){
 	</td></tr>
 <tr><td>
 			<center><h2 id="feature">●未來出路<img src="./image/photo7.png" width="40" height="35"></h2></center>
+
 			<div id="feature-content">
 			<div>
 	<span style="font-size:16px;">1.升學：國內外資訊或醫學資訊相關研究所。</span></div>
@@ -369,11 +395,18 @@ $(document).ready(function(){
 </td></tr>
 </table>
 </div>
+<div class="hover">
+<a href="./test/index.php">
+  <img  src="image/blog.jpg">
+  <img  src="image/black.png">
+</div>
+
 		<div>
 			 <hr />
             <p align="center">醫資學程教學網</p>
 		</div>
 	
 	</div>
+
 	</body>
 </html>
